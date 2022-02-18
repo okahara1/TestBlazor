@@ -1,0 +1,29 @@
+﻿@page "/member"
+@using TestBlazor.Shared.Models
+@inject HttpClient Http
+
+@if (t_member == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <Table TItem="T_member" DataSource="@t_member">
+        <Column @bind-Field="@context.Id" />
+        <Column @bind-Field="@context.Department" Sortable />
+        <Column @bind-Field="@context.Year" />
+        <Column @bind-Field="@context.Month" />
+        <Column @bind-Field="@context.Employee" />
+        <Column @bind-Field="@context.Created_data" />
+        <Column @bind-Field="@context.Update_data" />
+    </Table>
+}
+
+@code {
+    private List<T_member>? t_member;
+
+    protected override async Task OnInitializedAsync()
+    {
+        t_member = await Http.GetFromJsonAsync<List<T_member>>("api/T_member");
+    }
+}
