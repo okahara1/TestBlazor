@@ -1,0 +1,42 @@
+﻿@page "/"
+@inject IJSRuntime Js
+
+<Calendar @ref="cal" OnClick="ClickHandler" />
+<button class="btn btn-primary mt-4"
+ @onclick="@(() => WriteDiary())" >日記を保存する</button>
+
+<div class="text-center">
+    <textarea class="form-control mt-3" rows="3" />
+    <button class="btn btn-primary mt-4">日記を保存する</button>
+</div>
+
+@TextValue
+
+@code{
+    // テキスト表示用
+    string TextValue { get; set; }
+
+//    void ClickHandler(DateTime dt){ }
+    // 日記データクラス
+    public class Diary
+    {
+        public DateTime SelectDay { get; set; }
+        public string Text { get; set; }
+    }
+
+    private async Task ClickHandler(DateTime dt)
+    {
+        var v = await Js.InvokeAsync<Diary>("getDiary", dt);
+        TextValue = v?.Text ?? "日記がありません";
+    }
+
+    private Calendar cal;   // カレンダーコンポーネントの参照用
+
+    // 日記を保存する
+    private async Task WriteDiary()
+    {
+        var key = await Js.InvokeAsync<string>("putDiary",
+            new Diary{SelectDay = cal.SelectDay, Text = TextValue});
+    }
+
+}
