@@ -1,0 +1,12 @@
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\bin\Debug\net6.0\TestBlazor.Shared.deps.json
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\bin\Debug\net6.0\TestBlazor.Shared.dll
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\bin\Debug\net6.0\TestBlazor.Shared.pdb
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.csproj.AssemblyReference.cache
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.AssemblyInfoInputs.cache
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.AssemblyInfo.cs
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.csproj.CoreCompileInputs.cache
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.dll
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\refint\TestBlazor.Shared.dll
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\TestBlazor.Shared.pdb
+C:\Users\syunwa\source\repos\TestBlazor\TestBlazor\Shared\obj\Debug\net6.0\ref\TestBlazor.Shared.dll
